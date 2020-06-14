@@ -73,3 +73,33 @@ textarea{
 .save-btn {
   float:right;
 }
+
+.style-row {
+  border: none;
+
+}
+
+.col-header {
+  background-color:lightgrey;
+  margin: 0px auto;
+}
+
+.color-change-9 {
+  background-color: lightgrey; 
+  margin: 5px auto;
+}
+
+.color-change-1 {
+  margin: 5px auto;
+}
+
+.color-change-container {
+  margin: 5px auto; 
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.btn {
+  margin-top: 10px; 
+  float: right;
+}

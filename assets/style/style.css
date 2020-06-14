@@ -85,7 +85,7 @@ textarea{
 }
 
 .color-change-9 {
-  background-color: lightgrey; 
+  /*background-color: lightgrey;*/
   margin: 5px auto;
 }
 
@@ -100,6 +100,6 @@ textarea{
 }
 
 .btn {
-  margin-top: 15px; 
+  margin-top: 25px; 
   float: right;
 }

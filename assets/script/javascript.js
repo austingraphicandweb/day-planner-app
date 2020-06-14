@@ -17,13 +17,13 @@
         var blockPresent = $(".block-present");
         var blockFuture = $(".block-future");
         if (blockPast) {
-            $(blockPast).css("background-color","#808080");
+            $(blockPast).css("background-color","#ece8e2");
         } 
         if (blockPresent) {
-            $(blockPresent).css("background-color", "#ff0000");
+            $(blockPresent).css("background-color", "#e68d6d");
         }
         if (blockFuture) {
-            $(blockFuture).css("background-color", "#00ff00");
+            $(blockFuture).css("background-color", "#69bd45");
         }
     }
     //--------------------

@@ -3,10 +3,7 @@
  */
 
  // Variables
- // Function definitions
-    // if colNine < current time, then colNine.style.backgroundColor = "#808080"; && disable button click and save feature.
-    // else if colNine === current time, then colNine.style.backgroundColor = "#ff0000"; && allow an event to be created and saved.
-    // else if ColNine > current time, then colNine.style.backgroundColor = "#00ff00"; && allow an event to be created and saved.
+ // Function definition
     //--------------------
         // time blocks color coded to display past, present, and future
     function colorCode(){
@@ -17,13 +14,13 @@
         var blockPresent = $(".block-present");
         var blockFuture = $(".block-future");
         if (blockPast) {
-            $(blockPast).css("background-color","#808080");
+            $(blockPast).css("background-color","#ece8e2");
         } 
         if (blockPresent) {
-            $(blockPresent).css("background-color", "#ff0000");
+            $(blockPresent).css("background-color", "#e68d6d");
         }
         if (blockFuture) {
-            $(blockFuture).css("background-color", "#00ff00");
+            $(blockFuture).css("background-color", "#69bd45");
         }
     }
     //--------------------
@@ -36,7 +33,7 @@
     }
 
     function time() {
-        $(".style").css("margin","30px");
+        $(".style").css("margin","10px");
         $(".block-1").append(moment().subtract(3, 'hour').format('LT'));
         $(".block-2").append(moment().subtract(2, 'hour').format('LT'));
         $(".block-3").append(moment().subtract(1, 'hour').format('LT'));

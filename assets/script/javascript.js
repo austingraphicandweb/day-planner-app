@@ -43,14 +43,15 @@ $(document).ready(function(){
     // Time display on the left hand side of the page
     function time() {
         $(".style").css("margin","10px");
-        $(".block-1").append(moment().subtract(3, 'hour').format('LT'));
-        $(".block-2").append(moment().subtract(2, 'hour').format('LT'));
-        $(".block-3").append(moment().subtract(1, 'hour').format('LT'));
-        $(".block-4").append(moment().format('LT'));
-        $(".block-5").append(moment().add(1, 'hour').format('LT'));
-        $(".block-6").append(moment().add(2, 'hour').format('LT'));
-        $(".block-7").append(moment().add(3, 'hour').format('LT'));
-        $(".block-8").append(moment().add(4, 'hour').format('LT'));
+        $(".block-1").append(moment().subtract(3, 'hour').format('h a'));
+        $(".block-2").append(moment().subtract(2, 'hour').format('h a'));
+        $(".block-3").append(moment().subtract(1, 'hour').format('h a'));
+        // fix this
+        $(".block-4").append(moment().format('h a'));
+        $(".block-5").append(moment().add(1, 'hour').format('h a'));
+        $(".block-6").append(moment().add(2, 'hour').format('h a'));
+        $(".block-7").append(moment().add(3, 'hour').format('h a'));
+        $(".block-8").append(moment().add(4, 'hour').format('h a'));
     }
 
     //------------------
@@ -64,6 +65,14 @@ $(document).ready(function(){
     // -----------------------------------------
     // Save button 
     // this button is treated like a submit button where when it is clicked, an event is triggered. Once save button is clicked it needs to grab the value of the input and the id of the input.
+$(".container").on("click", ".btn", function (event){
+    event.preventDefault(); 
+    var content = $(this).val();
+    var array = JSON.stringify(content);
+    localStorage.setItem("content",array);
+    var deString = JSON.parse(localStorage.getItem("content"));
+    console.log(deString);
+})
+// -----------------------------------------
 
-    // -----------------------------------------
 })

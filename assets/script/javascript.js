@@ -32,7 +32,7 @@ $(document).ready(function(){
     // Header display 
     //function displayDay is going to show the current month, day, and year in the jumbotron.
     function displayDay() {
-        $(".lead").append(moment().format('MMMM Do YYYY'));
+        $(".lead").append(moment().format('dddd MMMM Do YYYY'));
         $(".lead").css("margin","60px 0px 0px 0px");
         $(".lead").css("font-size", "25px")
     }
